@@ -1,9 +1,0 @@
-[X] Faça uma arquitetura que possa ser utilizada para escalar o projeto para centenas de funções;
-[X] Deverá utilizar o firebase como servidor e dentro do firebase utilizar dois recursos, que são: functions e firestore;
-[X] Criar uma função no firebase functions que cria um novo registro em uma collection do firestore;
-[X] Ao adicionar esse registro, deve-se usar o trigger do firestore (onCreate) para setar o atributo increment_id no registro criado;
-[X] Cada registro tem que utilizar o próximo increment_id disponível. Ex: se o último for 3, deverá utilizar o 4, ou se o último for 10, deve-se utilizar o 11;
-[X] A chamada para a function deve ser um POST com o body em json com o atributo name;
-[] Faça a arquitetura do código utilizando o princípio de design que preferir e deve conter testes automatizados;
-[X] Pode rodar todo o projeto do firebase via emulador, a documentação do próprio firebase tem toda a explicação;
-[X] Importante: o teste não deve ser realizado com framework, assim conseguimos analisar de forma completa seu conhecimento.

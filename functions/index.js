@@ -4,7 +4,6 @@ const admin = require("firebase-admin");
 admin.initializeApp();
 const db = admin.firestore();
 
-/** This is a description of the foo function. */
 exports.addName = functions.https.onRequest(async (req, res) => {
   const {name} = req.body;
   const writeResult = await admin
@@ -14,7 +13,6 @@ exports.addName = functions.https.onRequest(async (req, res) => {
   res.json({result: `Message with ID: ${writeResult.id} added.`});
 });
 
-/** This is a description of the foo function. */
 exports.getNames = functions.https.onRequest(async (req, res) => {
   db.collection("messages")
       .get()
@@ -24,14 +22,13 @@ exports.getNames = functions.https.onRequest(async (req, res) => {
         // eslint-disable-next-line max-len
           todos.push({
             increment_Id: doc.data().increment_id,
-            messages: doc.data().name,
+            name: doc.data().name,
           });
         });
         res.json(todos);
       });
 });
 
-/** This is a description of the foo function. */
 exports.incrementDocumentID = functions.firestore
     .document("/messages/{docId}")
     .onCreate(async (snap, context) => {
