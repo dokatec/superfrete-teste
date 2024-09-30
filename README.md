@@ -4,6 +4,16 @@
 
 Criação de backend com firebase como servidor e dentro do firebase foram utilizados dois recursos, que são: Cloud Functions e Cloud Firestore, O projeto foi executado via emulador.
 
+## Conhecendo o Firebase
+
+O Firebase é uma plataforma de desenvolvimento de aplicativos móveis e web do Google que oferece uma variedade de serviços para ajudar os desenvolvedores a criar aplicativos de alta qualidade de forma rápida e fácil. Ele é conhecido por sua facilidade de uso e por fornecer uma série de ferramentas que simplificam tarefas complexas, como autenticação de usuários, armazenamento de dados em tempo real, hospedagem de sites e muito mais.
+
+Por que usar o Firebase?
+
+Facilidade de uso: A plataforma é intuitiva e fácil de aprender, mesmo para desenvolvedores iniciantes. <br/>
+Escalabilidade: O Firebase é projetado para lidar com uma grande quantidade de usuários e dados.<br/>
+Integração com outros serviços do Google: O Firebase se integra perfeitamente com outros serviços do Google, como o Google Analytics e o Google Ads.<br/>
+
 ## Tecnologias Utilizadas
 
 * **Backend:** [Node.js, Javascript]
